@@ -1,0 +1,32 @@
+git init			//iniciar git
+git status			//ver el estado de git
+git add -A			//añadir archivos a git
+git commit -m			//comentar modificacion de git
+git log				//muestra los commits hechos
+git log > commits.txt		//crea archivo con commits
+git checkout [codigo del commit]//viaja al commit especificado
+git checkout master 		//viaja a la ultima version
+git checkout [nombre de rama]	//cambia de rama
+git reset --soft		//elimina el commit pero deja los archivos
+git reset --mixed		//
+git reset --hard		//borra todo
+Q				//salir
+git branch			//muestra las ramas
+git branch [nombre de rama] 	//crea rama
+git bracnh -d [nombre de rama]	//elimina la rama
+git merge [nombre de rama]	//rama actual absorbe la rama especificada
+git checkout -b [nombre rama]	//crea rama y se mueve a ella
+git clone [codigo https] 	//clona un proyecto de github
+git remote add origin [codigo https]//conecta proyecto local con remoto
+git remote -v			//comprueba que se han conectado los proyectos
+git remote remove origin	//desconecta los proyectos
+git push origin [nombre de rama]//manda los commits a github(actualiza proyecto remoto)
+git commit --amend -m		//Corrige mensage
+git push origin [nombre de rama] -f		//fuerza a subir los cambios(apesar de ser el mismo commit)
+git tag -a [version del proyecto] -m "[mensaje]" //pone etiqueta a un commit
+git tag -a [version del proyecto] -m "[mensaje]" [codigo del commit]	//pone etiqueta al commit especificado
+git push origin [version del proyecto]	//sube el tag al proyecto remoto
+git push origin --tags			//sube todos los tags
+git branch -a				//muestra ramas ocultas
+git fetch origin			//baja los cambios de proyecto remoto
+git merge origin/master			//combina el commit de otro con el nuestro y crea nueva rama
