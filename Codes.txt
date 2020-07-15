@@ -30,3 +30,5 @@ git push origin --tags			//sube todos los tags
 git branch -a				//muestra ramas ocultas
 git fetch origin			//baja los cambios de proyecto remoto
 git merge origin/master			//combina el commit de otro con el nuestro y crea nueva rama
+git branch gh-pages			//crea rama gh-pages
+touch .gitignore			//crea archivo gitignore
